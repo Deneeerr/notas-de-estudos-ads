@@ -1,0 +1,181 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f1f6;
+    color: #222;
+    padding: 20px;
+}
+
+/* Área principal */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Seções e cartões */
+section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+section span {
+    color: #4169e1;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+/* Campos do formulário */
+.fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field span {
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.field input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.field input:focus {
+    border-color: #4169e1;
+    box-shadow: 0 0 4px rgba(65, 105, 225, 0.25);
+}
+
+/* Botões */
+.action {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.action button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.primary {
+    background-color: #3b5be9;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #2948c9;
+}
+
+.secodary {
+    background-color: #e2e7f0;
+    color: #333;
+}
+
+.secodary:hover {
+    background-color: #d1d9e8;
+}
+
+.danger {
+    background-color: #f5dddd;
+    color: #c03939;
+}
+
+.danger:hover {
+    background-color: #efc5c5;
+}
+
+/* Mensagem de feedback */
+.feedback {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Lista de usuários */
+#listaUsuarios {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#listaUsuarios li {
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+#listaUsuarios li:last-child {
+    border-bottom: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .fields {
+        grid-template-columns: 1fr;
+    }
+
+    .action button {
+        flex: 1;
+    }
+}
